@@ -1,164 +1,42 @@
-/* RESET */
-*{
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESETS
+   ========================================================================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CONFIGURAÇÕES GERAIS */
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f5f7f5;
-    color: #333;
+    color: #333333;
+    background-color: #f7f9f6;
 }
 
-/* CABEÇALHO */
-header{
-    background: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1{
-    margin-bottom: 15px;
-}
-
-/* MENU */
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    color: #c8e6c9;
-}
-
-/* CONTEÚDO PRINCIPAL */
-main{
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* SEÇÕES */
-section{
-    background: white;
-    margin-bottom: 30px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-section h2{
-    color: #2e7d32;
-    margin-bottom: 15px;
-}
-
-section p{
-    margin-bottom: 15px;
-}
-
-/* LISTAS */
-ul{
-    margin: 15px 0;
-    padding-left: 25px;
-}
-
-li{
-    margin-bottom: 8px;
-}
-
-/* IMAGENS */
-img{
-    width: 100%;
-    max-width: 700px;
+img {
+    max-width: 100%;
+    height: auto;
     display: block;
+    border-radius: 8px;
     margin: 20px auto;
-    border-radius: 10px;
 }
 
-/* BOTÕES */
-button{
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+/* ==========================================================================
+   2. CABEÇALHO E NAVEGAÇÃO (HEADER & NAV)
+   ========================================================================== */
+header {
+    background-color: #2c5e3b; /* Verde escuro voltado para o agro */
+    color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-button:hover{
-    background-color: #1b5e20;
-}
-
-/* FORMULÁRIO */
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-label{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input,
-textarea{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea{
-    min-height: 120px;
-    resize: vertical;
-}
-
-form button{
-    margin-top: 15px;
-    width: fit-content;
-}
-
-/* RODAPÉ */
-footer{
-    background-color: #1b5e20;
-    color: white;
+header h1 {
     text-align: center;
-    padding: 25px;
-}
-
-footer p{
-    margin: 8px 0;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px){
-
-    nav ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section{
-        padding: 20px;
-    }
-
-    button{
-        width: 100%;
-    }
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
